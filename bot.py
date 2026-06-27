@@ -14,7 +14,7 @@ DISCORD_TOKEN = os.environ.get("MTUyMDI4MjA4NjE2MDcyODIwOA.G2m3Ek.oZv_xEcUNLdFDL
 ALLOWED_CHANNEL_ID = None  # optional: set an int channel ID to restrict commands
 
 TMUX_SESSION = "mc"
-SERVER_DIR = "~/mcserver"
+SERVER_DIR = "~/mcserver/mcsimp"
 JAVA_BIN = "java"  # use full SDKMAN path if needed, e.g. ~/.sdkman/candidates/java/25-tem/bin/java
 JAVA_ARGS = "-Xmx8G -Xms4G -jar server.jar --nogui"
 JAVA_CMD = f"cd {SERVER_DIR} && {JAVA_BIN} {JAVA_ARGS}"
@@ -23,7 +23,7 @@ CLOUDSHELL_TIMEOUT = 120
 PORT = int(os.environ.get("PORT", 10000))  # Render injects PORT automatically
 # ======================================
 
-
+print(f"Token present: {bool(DISCORD_TOKEN)}, length: {len(DISCORD_TOKEN) if DISCORD_TOKEN else 0}")
 def restore_gcloud_credentials():
     """
     Restores ~/.config/gcloud from a base64-encoded tarball stored in the
