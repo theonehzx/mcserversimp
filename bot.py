@@ -10,7 +10,7 @@ from discord.ext import commands
 from aiohttp import web
 
 # ============== CONFIG ==============
-DISCORD_TOKEN = os.environ.get("MTUyMDI4MjA4NjE2MDcyODIwOA.G2m3Ek.oZv_xEcUNLdFDLslgb9wVPqJ8rfia_O77J-XEE")
+DISCORD_TOKEN = os.environ.get("DISCORD_BOT_TOKEN")
 ALLOWED_CHANNEL_ID = None  # optional: set an int channel ID to restrict commands
 
 TMUX_SESSION = "mc"
